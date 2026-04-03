@@ -35,7 +35,7 @@ const FurnitureSection = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          Elegant designs that transform your home
+          Explore stylish and durable furniture including sofa sets, beds, dining tables, wardrobes, mattresses, and complete bedroom sets.
         </motion.p>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
           {furniture.map((item, i) => (
