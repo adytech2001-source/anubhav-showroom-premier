@@ -31,7 +31,7 @@ const TrustSection = () => {
           >
             <img
               src={customersImg}
-              alt="Happy customers at Anubhav Showroom"
+              alt="Happy customers shopping at Anubhav Electronics & Furniture Showroom in Prayagraj"
               loading="lazy"
               width={960}
               height={640}

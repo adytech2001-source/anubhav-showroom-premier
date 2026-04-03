@@ -8,13 +8,13 @@ import inverterImg from "@/assets/products/inverter.jpg";
 import homeAppliancesImg from "@/assets/products/home-appliances.jpg";
 
 const electronics = [
-  { image: fridgeImg, name: "Fridge" },
-  { image: washingMachineImg, name: "Washing Machine" },
-  { image: acImg, name: "Air Conditioner" },
-  { image: coolerImg, name: "Air Cooler" },
-  { image: smartTvImg, name: "Smart LED & 4K TVs" },
-  { image: inverterImg, name: "Inverter & Battery" },
-  { image: homeAppliancesImg, name: "Home Appliances" },
+  { image: fridgeImg, name: "Fridge", alt: "Refrigerator shop in Prayagraj" },
+  { image: washingMachineImg, name: "Washing Machine", alt: "Washing machine store near Mukundpur Bajar" },
+  { image: acImg, name: "Air Conditioner", alt: "AC shop in Prayagraj" },
+  { image: coolerImg, name: "Air Cooler", alt: "Air cooler showroom near Soraon" },
+  { image: smartTvImg, name: "Smart LED & 4K TVs", alt: "Buy Smart TV in Prayagraj" },
+  { image: inverterImg, name: "Inverter & Battery", alt: "Inverter battery shop near me Prayagraj" },
+  { image: homeAppliancesImg, name: "Home Appliances", alt: "Home appliances store Mukundpur Bajar" },
 ];
 
 const ElectronicsSection = () => {
@@ -27,15 +27,15 @@ const ElectronicsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <span className="text-gold-gradient">Electronics</span> Range
+          Buy the Latest <span className="text-gold-gradient">Electronics</span> in Prayagraj
         </motion.h2>
         <motion.p
-          className="text-muted-foreground text-center mb-12 max-w-lg mx-auto"
+          className="text-muted-foreground text-center mb-12 max-w-xl mx-auto"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          Top brands, latest models, best prices
+          Buy the latest electronics in Mukundpur Bajar including Smart TVs, Refrigerators, Washing Machines, Air Conditioners, Air Coolers, Inverters, and Batteries.
         </motion.p>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
           {electronics.map((item, i) => (
@@ -50,7 +50,7 @@ const ElectronicsSection = () => {
               <div className="aspect-square overflow-hidden">
                 <img
                   src={item.image}
-                  alt={item.name}
+                  alt={item.alt}
                   loading="lazy"
                   width={640}
                   height={640}

@@ -8,13 +8,13 @@ import mattressImg from "@/assets/products/mattress.jpg";
 import bedroomSetImg from "@/assets/products/bedroom-set.jpg";
 
 const furniture = [
-  { image: bedImg, name: "Beds" },
-  { image: sofaImg, name: "Sofa Sets" },
-  { image: diningImg, name: "Dining Tables" },
-  { image: wardrobeImg, name: "Wardrobes" },
-  { image: dressingImg, name: "Dressing Tables" },
-  { image: mattressImg, name: "Mattresses" },
-  { image: bedroomSetImg, name: "Bedroom Sets" },
+  { image: bedImg, name: "Beds", alt: "Bed and wardrobe shop Prayagraj" },
+  { image: sofaImg, name: "Sofa Sets", alt: "Modern sofa set showroom in Mukundpur Bajar" },
+  { image: diningImg, name: "Dining Tables", alt: "Dining table furniture shop Prayagraj" },
+  { image: wardrobeImg, name: "Wardrobes", alt: "Wardrobe furniture store near Soraon" },
+  { image: dressingImg, name: "Dressing Tables", alt: "Dressing table shop in Prayagraj" },
+  { image: mattressImg, name: "Mattresses", alt: "Mattress store near Mukundpur Bajar" },
+  { image: bedroomSetImg, name: "Bedroom Sets", alt: "Complete bedroom set showroom Prayagraj" },
 ];
 
 const FurnitureSection = () => {
@@ -27,15 +27,15 @@ const FurnitureSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Premium <span className="text-gold-gradient">Furniture</span> Collection
+          Explore Stylish <span className="text-gold-gradient">Furniture</span> in Prayagraj
         </motion.h2>
         <motion.p
-          className="text-muted-foreground text-center mb-12 max-w-lg mx-auto"
+          className="text-muted-foreground text-center mb-12 max-w-xl mx-auto"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          Elegant designs that transform your home
+          Explore stylish and durable furniture including sofa sets, beds, dining tables, wardrobes, mattresses, and complete bedroom sets.
         </motion.p>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
           {furniture.map((item, i) => (
@@ -50,7 +50,7 @@ const FurnitureSection = () => {
               <div className="aspect-square overflow-hidden">
                 <img
                   src={item.image}
-                  alt={item.name}
+                  alt={item.alt}
                   loading="lazy"
                   width={640}
                   height={640}
