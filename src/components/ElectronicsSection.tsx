@@ -27,10 +27,10 @@ const ElectronicsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <span className="text-gold-gradient">Electronics</span> Range
+          Buy the Latest <span className="text-gold-gradient">Electronics</span> in Prayagraj
         </motion.h2>
         <motion.p
-          className="text-muted-foreground text-center mb-12 max-w-lg mx-auto"
+          className="text-muted-foreground text-center mb-12 max-w-xl mx-auto"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
