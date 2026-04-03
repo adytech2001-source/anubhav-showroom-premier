@@ -8,13 +8,13 @@ import inverterImg from "@/assets/products/inverter.jpg";
 import homeAppliancesImg from "@/assets/products/home-appliances.jpg";
 
 const electronics = [
-  { image: fridgeImg, name: "Fridge" },
-  { image: washingMachineImg, name: "Washing Machine" },
-  { image: acImg, name: "Air Conditioner" },
-  { image: coolerImg, name: "Air Cooler" },
-  { image: smartTvImg, name: "Smart LED & 4K TVs" },
-  { image: inverterImg, name: "Inverter & Battery" },
-  { image: homeAppliancesImg, name: "Home Appliances" },
+  { image: fridgeImg, name: "Fridge", alt: "Refrigerator shop in Prayagraj" },
+  { image: washingMachineImg, name: "Washing Machine", alt: "Washing machine store near Mukundpur Bajar" },
+  { image: acImg, name: "Air Conditioner", alt: "AC shop in Prayagraj" },
+  { image: coolerImg, name: "Air Cooler", alt: "Air cooler showroom near Soraon" },
+  { image: smartTvImg, name: "Smart LED & 4K TVs", alt: "Buy Smart TV in Prayagraj" },
+  { image: inverterImg, name: "Inverter & Battery", alt: "Inverter battery shop near me Prayagraj" },
+  { image: homeAppliancesImg, name: "Home Appliances", alt: "Home appliances store Mukundpur Bajar" },
 ];
 
 const ElectronicsSection = () => {
