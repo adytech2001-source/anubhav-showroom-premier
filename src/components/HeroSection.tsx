@@ -16,14 +16,6 @@ const HeroSection = () => {
 
       <div className="container relative z-10 py-20">
         <div className="max-w-3xl">
-          <motion.img
-            src={logo}
-            alt="Anubhav Electronics & Furniture Showroom"
-            className="w-48 mb-8"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          />
 
           <motion.h1
             className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-6"
