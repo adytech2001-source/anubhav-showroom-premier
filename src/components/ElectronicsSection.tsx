@@ -50,7 +50,7 @@ const ElectronicsSection = () => {
               <div className="aspect-square overflow-hidden">
                 <img
                   src={item.image}
-                  alt={item.name}
+                  alt={item.alt}
                   loading="lazy"
                   width={640}
                   height={640}
