@@ -35,7 +35,7 @@ const ElectronicsSection = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          Top brands, latest models, best prices
+          Buy the latest electronics in Mukundpur Bajar including Smart TVs, Refrigerators, Washing Machines, Air Conditioners, Air Coolers, Inverters, and Batteries.
         </motion.p>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
           {electronics.map((item, i) => (
