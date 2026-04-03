@@ -1,14 +1,20 @@
 import { motion } from "framer-motion";
-import { Refrigerator, WashingMachine, Wind, Fan, Tv, Battery, Home } from "lucide-react";
+import fridgeImg from "@/assets/products/fridge.jpg";
+import washingMachineImg from "@/assets/products/washing-machine.jpg";
+import acImg from "@/assets/products/ac.jpg";
+import coolerImg from "@/assets/products/cooler.jpg";
+import smartTvImg from "@/assets/products/smart-tv.jpg";
+import inverterImg from "@/assets/products/inverter.jpg";
+import homeAppliancesImg from "@/assets/products/home-appliances.jpg";
 
 const electronics = [
-  { icon: Refrigerator, name: "Fridge" },
-  { icon: WashingMachine, name: "Washing Machine" },
-  { icon: Wind, name: "Air Conditioner" },
-  { icon: Fan, name: "Air Cooler" },
-  { icon: Tv, name: "Smart LED & 4K TVs" },
-  { icon: Battery, name: "Inverter & Battery" },
-  { icon: Home, name: "Home Appliances" },
+  { image: fridgeImg, name: "Fridge" },
+  { image: washingMachineImg, name: "Washing Machine" },
+  { image: acImg, name: "Air Conditioner" },
+  { image: coolerImg, name: "Air Cooler" },
+  { image: smartTvImg, name: "Smart LED & 4K TVs" },
+  { image: inverterImg, name: "Inverter & Battery" },
+  { image: homeAppliancesImg, name: "Home Appliances" },
 ];
 
 const ElectronicsSection = () => {
@@ -35,14 +41,25 @@ const ElectronicsSection = () => {
           {electronics.map((item, i) => (
             <motion.div
               key={item.name}
-              className="group bg-card border border-border rounded-xl p-8 text-center hover:border-gold hover:shadow-gold transition-all duration-300 cursor-pointer"
+              className="group bg-card border border-border rounded-xl overflow-hidden hover:border-gold hover:shadow-gold transition-all duration-300 cursor-pointer"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
             >
-              <item.icon className="w-12 h-12 text-gold mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
-              <p className="text-foreground font-medium">{item.name}</p>
+              <div className="aspect-square overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  loading="lazy"
+                  width={640}
+                  height={640}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <div className="p-4 text-center">
+                <p className="text-foreground font-medium">{item.name}</p>
+              </div>
             </motion.div>
           ))}
         </div>
