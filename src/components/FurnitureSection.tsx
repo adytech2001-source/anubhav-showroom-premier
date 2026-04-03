@@ -27,10 +27,10 @@ const FurnitureSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Premium <span className="text-gold-gradient">Furniture</span> Collection
+          Explore Stylish <span className="text-gold-gradient">Furniture</span> in Prayagraj
         </motion.h2>
         <motion.p
-          className="text-muted-foreground text-center mb-12 max-w-lg mx-auto"
+          className="text-muted-foreground text-center mb-12 max-w-xl mx-auto"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
