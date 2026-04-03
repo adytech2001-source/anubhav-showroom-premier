@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import TrustSection from "@/components/TrustSection";
 import ElectronicsSection from "@/components/ElectronicsSection";
@@ -12,15 +13,16 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <HeroSection />
+    <div className="min-h-screen bg-background scroll-smooth">
+      <Navbar />
+      <div id="hero"><HeroSection /></div>
       <TrustSection />
-      <ElectronicsSection />
-      <FurnitureSection />
-      <WhyChooseUs />
-      <ServicesSection />
+      <div id="electronics"><ElectronicsSection /></div>
+      <div id="furniture"><FurnitureSection /></div>
+      <div id="why-us"><WhyChooseUs /></div>
+      <div id="services"><ServicesSection /></div>
       <OwnerSection />
-      <ContactSection />
+      <div id="contact"><ContactSection /></div>
       <FinalCTA />
       <Footer />
       <WhatsAppButton />
