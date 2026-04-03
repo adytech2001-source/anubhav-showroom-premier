@@ -53,7 +53,7 @@ const ContactSection = () => {
           >
             <iframe
               title="Anubhav Showroom Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.0!2d81.85!3d25.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDI3JzAwLjAiTiA4McKwNTEnMDAuMCJF!5e0!3m2!1sen!2sin!4v1"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.5!2d81.8833!3d25.4333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399acb00f8cf3c0b%3A0x8e5f4c3e2d1a0b9c!2sMukundpur%20Bajar%2C%20Holagarh%2C%20Soraon%2C%20Prayagraj%2C%20Uttar%20Pradesh%20212503!5e0!3m2!1sen!2sin!4v1"
               width="100%"
               height="300"
               style={{ border: 0 }}
