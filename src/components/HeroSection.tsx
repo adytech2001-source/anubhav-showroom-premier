@@ -13,17 +13,6 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-transparent" />
       </div>
 
-      {/* Limited Time Badge */}
-      <div className="absolute top-4 right-4 z-20">
-        <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ delay: 1, type: "spring" }}
-          className="bg-gold-gradient px-4 py-2 rounded-full text-primary-foreground text-sm font-semibold"
-        >
-          🔥 Limited Time Offers
-        </motion.div>
-      </div>
 
       <div className="container relative z-10 py-20">
         <div className="max-w-3xl">
