@@ -6,6 +6,7 @@ import FurnitureSection from "@/components/FurnitureSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import ServicesSection from "@/components/ServicesSection";
 import OwnerSection from "@/components/OwnerSection";
+import LocalSEOSection from "@/components/LocalSEOSection";
 import ContactSection from "@/components/ContactSection";
 import FinalCTA from "@/components/FinalCTA";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -22,6 +23,7 @@ const Index = () => {
       <div id="why-us"><WhyChooseUs /></div>
       <div id="services"><ServicesSection /></div>
       <OwnerSection />
+      <LocalSEOSection />
       <div id="contact"><ContactSection /></div>
       <FinalCTA />
       <Footer />

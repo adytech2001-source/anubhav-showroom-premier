@@ -27,14 +27,8 @@ const HeroSection = () => {
             <span className="text-gold-gradient">Premium Electronics</span>{" "}
             & <span className="text-gold-gradient">Furniture</span>
           </motion.h1>
-          <motion.p
-            className="sr-only"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-          >
-            Best Electronics & Furniture Showroom in Prayagraj
-          </motion.p>
-          </motion.h1>
+
+          <h2 className="sr-only">Best Electronics & Furniture Showroom in Prayagraj</h2>
 
           <motion.p
             className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl"
