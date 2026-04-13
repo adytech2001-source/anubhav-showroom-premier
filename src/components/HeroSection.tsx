@@ -7,11 +7,15 @@ import Autoplay from "embla-carousel-autoplay";
 import heroSlide1 from "@/assets/hero-slide-1.jpg";
 import heroSlide2 from "@/assets/hero-slide-2.jpg";
 import heroSlide3 from "@/assets/hero-slide-3.jpg";
+import heroSlide4 from "@/assets/hero-slide-4.jpg";
+import heroSlide5 from "@/assets/hero-slide-5.jpg";
 
 const slides = [
-  { src: heroSlide1, alt: "Premium electronics and furniture showroom in Prayagraj" },
-  { src: heroSlide2, alt: "Stylish furniture showroom with sofa and dining sets" },
-  { src: heroSlide3, alt: "Electronics store with refrigerators, ACs, washing machines" },
+  { src: heroSlide1, alt: "Anubhav Electronics & Furniture Showroom front view in Mukundpur Bajar Prayagraj" },
+  { src: heroSlide2, alt: "Premium beds and sofa sets at Anubhav Showroom Prayagraj" },
+  { src: heroSlide3, alt: "Wooden furniture and wardrobes at Anubhav Furniture Showroom" },
+  { src: heroSlide4, alt: "Designer beds and mattresses collection in Prayagraj" },
+  { src: heroSlide5, alt: "Plastic chairs, coolers and home essentials at Anubhav Showroom" },
 ];
 
 const HeroSection = () => {
