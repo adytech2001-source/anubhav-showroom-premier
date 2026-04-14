@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone, MessageCircle, ArrowRight } from "lucide-react";
 import { useEffect, useState, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
@@ -9,6 +9,7 @@ import heroSlide2 from "@/assets/hero-slide-2.jpg";
 import heroSlide3 from "@/assets/hero-slide-3.jpg";
 import heroSlide4 from "@/assets/hero-slide-4.jpg";
 import heroSlide5 from "@/assets/hero-slide-5.jpg";
+import logo from "@/assets/969e7166-4bcf-45a5-bdbf-1d211ed54479.png";
 
 const slides = [
   { src: heroSlide1, alt: "Anubhav Electronics & Furniture Showroom front view in Mukundpur Bajar Prayagraj" },
@@ -57,12 +58,30 @@ const HeroSection = () => {
       </div>
 
       {/* Overlays */}
-      <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
-      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/60" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent" />
 
       {/* Content */}
       <div className="container relative z-10 py-20">
         <div className="max-w-3xl">
+          <motion.img
+            src={logo}
+            alt="Anubhav Showroom"
+            className="h-20 md:h-24 mb-6"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+          />
+
+          <motion.div
+            className="inline-block bg-secondary/10 border border-secondary/30 rounded-full px-4 py-1.5 mb-6"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+          >
+            <span className="text-secondary text-sm font-medium">✨ Smart Living Starts Here</span>
+          </motion.div>
+
           <motion.h1
             className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-6"
             initial={{ opacity: 0, y: 30 }}
@@ -71,18 +90,18 @@ const HeroSection = () => {
           >
             Upgrade Your Home with{" "}
             <span className="text-gold-gradient">Premium Electronics</span>{" "}
-            & <span className="text-gold-gradient">Furniture</span>
+            & <span className="text-blue-gradient">Furniture</span>
           </motion.h1>
 
           <h2 className="sr-only">Best Electronics & Furniture Showroom in Prayagraj</h2>
 
           <motion.p
-            className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl"
+            className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            From Smart TVs to Stylish Sofas – Everything You Need Under One Roof
+            From Smart TVs to Stylish Sofas — Everything You Need Under One Roof at <strong className="text-foreground">Mukundpur Bajar, Prayagraj</strong>
           </motion.p>
 
           <motion.div
@@ -93,7 +112,7 @@ const HeroSection = () => {
           >
             <a
               href="tel:9653032205"
-              className="bg-gold-gradient px-8 py-4 rounded-lg text-primary-foreground font-semibold text-lg flex items-center gap-2 hover:shadow-gold-lg transition-shadow duration-300"
+              className="bg-gold-gradient px-8 py-4 rounded-full text-primary-foreground font-semibold text-lg flex items-center gap-2 hover:shadow-gold-lg transition-all duration-300 hover:scale-105"
             >
               <Phone className="w-5 h-5" /> Call Now
             </a>
@@ -101,15 +120,21 @@ const HeroSection = () => {
               href="https://wa.me/919653032205"
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-gold bg-transparent px-8 py-4 rounded-lg text-gold font-semibold text-lg flex items-center gap-2 hover:bg-gold/10 transition-colors duration-300"
+              className="border-2 border-secondary bg-secondary/10 px-8 py-4 rounded-full text-secondary font-semibold text-lg flex items-center gap-2 hover:bg-secondary hover:text-secondary-foreground transition-all duration-300"
             >
               <MessageCircle className="w-5 h-5" /> WhatsApp Us
+            </a>
+            <a
+              href="#electronics"
+              className="px-8 py-4 rounded-full text-muted-foreground font-semibold text-lg flex items-center gap-2 hover:text-foreground transition-colors duration-300"
+            >
+              View Products <ArrowRight className="w-5 h-5" />
             </a>
           </motion.div>
 
           {/* Dots */}
           <motion.div
-            className="flex gap-2 mt-8"
+            className="flex gap-2 mt-10"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
@@ -118,10 +143,10 @@ const HeroSection = () => {
               <button
                 key={i}
                 onClick={() => emblaApi?.scrollTo(i)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                className={`h-2 rounded-full transition-all duration-300 ${
                   selectedIndex === i
-                    ? "bg-gold w-8"
-                    : "bg-muted-foreground/40 hover:bg-muted-foreground/60"
+                    ? "bg-primary w-10"
+                    : "bg-muted-foreground/30 w-2 hover:bg-muted-foreground/50"
                 }`}
                 aria-label={`Go to slide ${i + 1}`}
               />

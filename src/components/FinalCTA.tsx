@@ -4,7 +4,7 @@ import { Phone, MapPin } from "lucide-react";
 const FinalCTA = () => {
   return (
     <section className="py-24 bg-background relative overflow-hidden">
-      <div className="absolute inset-0 bg-gold/5" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5" />
       <div className="container relative z-10 text-center">
         <motion.h2
           className="text-3xl md:text-5xl font-display font-bold mb-6"
@@ -31,7 +31,7 @@ const FinalCTA = () => {
         >
           <a
             href="tel:9653032205"
-            className="bg-gold-gradient px-10 py-4 rounded-lg text-primary-foreground font-semibold text-lg flex items-center gap-2 hover:shadow-gold-lg transition-shadow duration-300"
+            className="bg-gold-gradient px-10 py-4 rounded-full text-primary-foreground font-semibold text-lg flex items-center gap-2 hover:shadow-gold-lg transition-all duration-300 hover:scale-105"
           >
             <Phone className="w-5 h-5" /> Call Now
           </a>
@@ -39,7 +39,7 @@ const FinalCTA = () => {
             href="https://www.google.com/maps/search/Mukundpur+Bajar+Holagarh+Soraon+Prayagraj"
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-gold px-10 py-4 rounded-lg text-gold font-semibold text-lg flex items-center gap-2 hover:bg-gold/10 transition-colors duration-300"
+            className="border-2 border-secondary bg-secondary/10 px-10 py-4 rounded-full text-secondary font-semibold text-lg flex items-center gap-2 hover:bg-secondary hover:text-secondary-foreground transition-all duration-300"
           >
             <MapPin className="w-5 h-5" /> Get Directions
           </a>
