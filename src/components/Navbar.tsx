@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 import logo from "@/assets/969e7166-4bcf-45a5-bdbf-1d211ed54479.png";
 
 const navLinks = [
@@ -54,6 +55,7 @@ const Navbar = () => {
               {link.label}
             </button>
           ))}
+          <ThemeToggle />
           <a
             href="tel:9653032205"
             className="bg-gold-gradient px-5 py-2 rounded-lg text-primary-foreground text-sm font-semibold flex items-center gap-2 hover:shadow-gold transition-shadow"
