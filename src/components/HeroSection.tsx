@@ -64,14 +64,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="container relative z-10 py-20">
         <div className="max-w-3xl">
-          <motion.img
-            src={logo}
-            alt="Anubhav Showroom"
-            className="h-20 md:h-24 mb-6"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
-          />
+
 
           <motion.div
             className="inline-block bg-secondary/10 border border-secondary/30 rounded-full px-4 py-1.5 mb-6"
