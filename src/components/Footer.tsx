@@ -1,5 +1,15 @@
+import { Link } from "react-router-dom";
 import logo from "@/assets/969e7166-4bcf-45a5-bdbf-1d211ed54479.png";
 import { Phone, MapPin, Clock } from "lucide-react";
+
+const quickLinks = [
+  { label: "Home", to: "/" },
+  { label: "Electronics", to: "/electronics" },
+  { label: "Furniture", to: "/furniture" },
+  { label: "Services", to: "/services" },
+  { label: "About", to: "/about" },
+  { label: "Contact", to: "/contact" },
+];
 
 const Footer = () => {
   return (
@@ -15,10 +25,10 @@ const Footer = () => {
           <div>
             <h4 className="font-display font-semibold text-foreground mb-3">Quick Links</h4>
             <div className="space-y-2">
-              {["Electronics", "Furniture", "Why Us", "Services", "Contact"].map(link => (
-                <a key={link} href={`#${link.toLowerCase().replace(" ", "-")}`} className="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                  {link}
-                </a>
+              {quickLinks.map(link => (
+                <Link key={link.to} to={link.to} className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                  {link.label}
+                </Link>
               ))}
             </div>
           </div>
