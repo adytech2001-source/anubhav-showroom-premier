@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Phone, MessageCircle, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useEffect, useState, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
@@ -117,12 +118,12 @@ const HeroSection = () => {
             >
               <MessageCircle className="w-5 h-5" /> WhatsApp Us
             </a>
-            <a
-              href="#electronics"
+            <Link
+              to="/electronics"
               className="px-8 py-4 rounded-full text-muted-foreground font-semibold text-lg flex items-center gap-2 hover:text-foreground transition-colors duration-300"
             >
               View Products <ArrowRight className="w-5 h-5" />
-            </a>
+            </Link>
           </motion.div>
 
           {/* Dots */}
