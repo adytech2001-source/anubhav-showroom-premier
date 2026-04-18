@@ -7,6 +7,8 @@ import wardrobeImg from "@/assets/products/wardrobe.jpg";
 import dressingImg from "@/assets/products/dressing-table.jpg";
 import mattressImg from "@/assets/products/mattress.jpg";
 import bedroomSetImg from "@/assets/products/bedroom-set.jpg";
+import plasticChairsImg from "@/assets/products/plastic-chairs.jpg";
+import waterTankImg from "@/assets/products/water-tank.jpg";
 
 const furniture = [
   { image: bedImg, name: "Beds", alt: "Bed and wardrobe shop Prayagraj" },
@@ -16,6 +18,8 @@ const furniture = [
   { image: dressingImg, name: "Dressing Tables", alt: "Dressing table shop in Prayagraj" },
   { image: mattressImg, name: "Mattresses", alt: "Mattress store near Mukundpur Bajar" },
   { image: bedroomSetImg, name: "Bedroom Sets", alt: "Complete bedroom set showroom Prayagraj" },
+  { image: plasticChairsImg, name: "Plastic Chairs", alt: "Plastic chairs shop in Prayagraj Mukundpur Bajar" },
+  { image: waterTankImg, name: "Water Tanks", alt: "Sintex water tank store near Soraon Prayagraj" },
 ];
 
 const FurnitureSection = () => {
