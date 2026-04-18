@@ -7,6 +7,7 @@ import coolerImg from "@/assets/products/cooler.jpg";
 import smartTvImg from "@/assets/products/smart-tv.jpg";
 import inverterImg from "@/assets/products/inverter.jpg";
 import homeAppliancesImg from "@/assets/products/home-appliances.jpg";
+import kitchenAppliancesImg from "@/assets/products/kitchen-appliances.jpg";
 
 const electronics = [
   { image: fridgeImg, name: "Fridge", alt: "Refrigerator shop in Prayagraj" },
@@ -15,6 +16,7 @@ const electronics = [
   { image: coolerImg, name: "Air Cooler", alt: "Air cooler showroom near Soraon" },
   { image: smartTvImg, name: "Smart LED & 4K TVs", alt: "Buy Smart TV in Prayagraj" },
   { image: inverterImg, name: "Inverter & Battery", alt: "Inverter battery shop near me Prayagraj" },
+  { image: kitchenAppliancesImg, name: "Kitchen Appliances", alt: "Kitchen appliances mixer microwave shop Prayagraj" },
   { image: homeAppliancesImg, name: "Home Appliances", alt: "Home appliances store Mukundpur Bajar" },
 ];
 
