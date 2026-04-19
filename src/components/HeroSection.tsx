@@ -39,32 +39,14 @@ const HeroSection = () => {
   }, [emblaApi, onSelect]);
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background Carousel */}
-      <div className="absolute inset-0" ref={emblaRef}>
-        <div className="flex h-full">
-          {slides.map((slide, i) => (
-            <div key={i} className="min-w-0 shrink-0 grow-0 basis-full h-full relative">
-              <img
-                src={slide.src}
-                alt={slide.alt}
-                width={1920}
-                height={1080}
-                className="w-full h-full object-cover"
-                {...(i === 0 ? {} : { loading: "lazy" as const })}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Overlays */}
-      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/60" />
-      <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent" />
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-background">
+      {/* Subtle background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5" />
 
       {/* Content */}
       <div className="container relative z-10 py-20">
-        <div className="max-w-3xl">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="max-w-3xl">
 
 
           <motion.div
