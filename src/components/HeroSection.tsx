@@ -129,6 +129,37 @@ const HeroSection = () => {
             ))}
           </motion.div>
         </div>
+
+        {/* Carousel Box - Right Side */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="relative"
+        >
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-border bg-card aspect-[4/3]">
+            <div className="absolute inset-0" ref={emblaRef}>
+              <div className="flex h-full">
+                {slides.map((slide, i) => (
+                  <div key={i} className="min-w-0 shrink-0 grow-0 basis-full h-full relative">
+                    <img
+                      src={slide.src}
+                      alt={slide.alt}
+                      width={1200}
+                      height={900}
+                      className="w-full h-full object-contain bg-muted"
+                      {...(i === 0 ? {} : { loading: "lazy" as const })}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="absolute inset-0 ring-1 ring-inset ring-primary/20 rounded-3xl pointer-events-none" />
+          </div>
+          <div className="absolute -top-4 -right-4 w-24 h-24 bg-gold-gradient rounded-full blur-2xl opacity-40 -z-10" />
+          <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-blue-gradient rounded-full blur-2xl opacity-40 -z-10" />
+        </motion.div>
+        </div>
       </div>
     </section>
   );
