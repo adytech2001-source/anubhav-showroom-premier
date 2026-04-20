@@ -55,7 +55,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <span className="text-secondary text-sm font-medium">✨ Smart Living Starts Here</span>
+            <span className="text-secondary text-sm font-medium">Smart Living Starts Here</span>
           </motion.div>
 
           <motion.h1
