@@ -89,14 +89,6 @@ const HeroSection = () => {
                       className="w-full h-full object-cover"
                       {...(i === 0 ? {} : { loading: "lazy" as const })}
                     />
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background/95 via-background/70 to-transparent p-4 md:p-8">
-                      <h3 className="font-display font-bold text-xl md:text-3xl text-foreground mb-1">
-                        {slide.title}
-                      </h3>
-                      <p className="text-sm md:text-lg text-muted-foreground">
-                        {slide.caption}
-                      </p>
-                    </div>
                   </div>
                 ))}
               </div>
