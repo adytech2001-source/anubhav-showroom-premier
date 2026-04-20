@@ -13,11 +13,36 @@ import heroSlide5 from "@/assets/hero-slide-5.jpg";
 import logo from "@/assets/969e7166-4bcf-45a5-bdbf-1d211ed54479.png";
 
 const slides = [
-  { src: heroSlide1, alt: "Anubhav Electronics & Furniture Showroom front view in Mukundpur Bajar Prayagraj" },
-  { src: heroSlide2, alt: "Premium beds and sofa sets at Anubhav Showroom Prayagraj" },
-  { src: heroSlide3, alt: "Wooden furniture and wardrobes at Anubhav Furniture Showroom" },
-  { src: heroSlide4, alt: "Designer beds and mattresses collection in Prayagraj" },
-  { src: heroSlide5, alt: "Plastic chairs, coolers and home essentials at Anubhav Showroom" },
+  {
+    src: heroSlide1,
+    alt: "Anubhav Electronics & Furniture Showroom front view in Mukundpur Bajar Prayagraj",
+    title: "Welcome to Anubhav Showroom",
+    caption: "Mukundpur Bajar, Prayagraj — Trusted since years",
+  },
+  {
+    src: heroSlide2,
+    alt: "Premium beds and sofa sets at Anubhav Showroom Prayagraj",
+    title: "Premium Beds & Sofa Sets",
+    caption: "Comfort and style for every modern home",
+  },
+  {
+    src: heroSlide3,
+    alt: "Wooden furniture and wardrobes at Anubhav Furniture Showroom",
+    title: "Wooden Furniture & Wardrobes",
+    caption: "Durable craftsmanship at unbeatable prices",
+  },
+  {
+    src: heroSlide4,
+    alt: "Designer beds and mattresses collection in Prayagraj",
+    title: "Designer Beds & Mattresses",
+    caption: "Sleep better with our premium collection",
+  },
+  {
+    src: heroSlide5,
+    alt: "Plastic chairs, coolers and home essentials at Anubhav Showroom",
+    title: "Home Essentials & Coolers",
+    caption: "Everything you need under one roof",
+  },
 ];
 
 const HeroSection = () => {
@@ -150,6 +175,14 @@ const HeroSection = () => {
                       className="w-full h-full object-contain bg-muted"
                       {...(i === 0 ? {} : { loading: "lazy" as const })}
                     />
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background/95 via-background/80 to-transparent p-4 md:p-6">
+                      <h3 className="font-display font-bold text-lg md:text-xl text-foreground mb-1">
+                        {slide.title}
+                      </h3>
+                      <p className="text-sm md:text-base text-muted-foreground">
+                        {slide.caption}
+                      </p>
+                    </div>
                   </div>
                 ))}
               </div>
