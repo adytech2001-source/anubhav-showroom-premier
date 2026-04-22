@@ -55,6 +55,7 @@ const Services = () => {
         highlight="A Complete Service"
         description="From product advice and free home delivery to installation, EMI and after-sales support — we make upgrading your home effortless."
         breadcrumb="Services"
+        variant="services"
       />
 
       <section className="py-20 bg-background">

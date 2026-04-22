@@ -94,6 +94,7 @@ const Furniture = () => {
         highlight="Furniture"
         description="Beds, sofas, wardrobes, dining sets, mattresses and complete bedroom packages — handpicked for quality, comfort and modern Indian homes."
         breadcrumb="Furniture"
+        variant="furniture"
       />
 
       <section className="py-12 bg-surface border-b border-border">

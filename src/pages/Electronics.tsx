@@ -86,6 +86,7 @@ const Electronics = () => {
         highlight="Electronics"
         description="From the latest 4K Smart TVs to energy-saving refrigerators, ACs and inverters — explore our complete range of branded electronics with full warranty and after-sales support."
         breadcrumb="Electronics"
+        variant="electronics"
       />
 
       <section className="py-12 bg-surface border-b border-border">
