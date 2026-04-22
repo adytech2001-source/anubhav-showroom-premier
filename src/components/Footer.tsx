@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="container">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <img src={logo} alt="Anubhav Showroom" className="h-16 mb-4 mx-0 text-xl" loading="lazy" />
+            <img src={logo} alt="Anubhav Showroom" className="h-28 md:h-32 mb-4 mx-0 text-xl" loading="lazy" />
             <p className="text-muted-foreground text-sm leading-relaxed">
               Your one-stop destination for premium electronics and stylish furniture in Prayagraj.
             </p>
