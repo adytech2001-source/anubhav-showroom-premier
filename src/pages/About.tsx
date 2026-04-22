@@ -27,6 +27,7 @@ const About = () => {
         highlight="Anubhav Showroom"
         description="A trusted local name in Mukundpur Bajar, Prayagraj — bringing premium electronics and stylish furniture to thousands of homes across Soraon, Holagarh and beyond."
         breadcrumb="About"
+        variant="about"
       />
 
       <section className="py-20 bg-background">
