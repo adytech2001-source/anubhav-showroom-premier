@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Phone, MessageCircle, ArrowRight, Star, ShieldCheck, Truck, Sparkles } from "lucide-react";
+import { Phone, MessageCircle, ArrowRight, Star, ShieldCheck, Award, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect, useState, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
