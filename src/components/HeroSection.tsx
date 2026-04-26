@@ -20,7 +20,7 @@ const slides = [
 ];
 
 const marqueeItems = [
-  "✦ Free Local Delivery",
+  "✦ Best Electronic Shop in Prayagraj",
   "✦ EMI Available",
   "✦ Best Price Guarantee",
   "✦ Trusted Since Years",
