@@ -60,7 +60,7 @@ const products = [
     name: "Complete Bedroom Sets",
     alt: "Complete bedroom set showroom Prayagraj",
     desc: "Coordinated bedroom packages including bed, wardrobe, dressing table and side tables — designed to match perfectly and save you both time and money.",
-    features: ["Bed + wardrobe combo", "Matching designs", "Combo discounts", "Free delivery"],
+    features: ["Bed + wardrobe combo", "Matching designs", "Combo discounts", "Premium quality"],
   },
   {
     image: plasticChairsImg,
