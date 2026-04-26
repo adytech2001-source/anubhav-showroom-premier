@@ -87,7 +87,7 @@ const HeroSection = () => {
               & <span className="text-blue-gradient">Furniture</span>
             </motion.h1>
 
-            <h2 className="sr-only">Best Electronics & Furniture Showroom in Prayagraj</h2>
+            <h2 className="sr-only">Best Electronic Shop in Prayagraj — Anubhav Electronics & Furniture Showroom</h2>
 
             <motion.p
               className="text-base md:text-lg text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed"
